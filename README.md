@@ -1,2 +1,2 @@
 # IOS
-segmentcontrol 更多选择
+segmentcontrol 容纳选择按钮
