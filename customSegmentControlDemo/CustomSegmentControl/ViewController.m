@@ -20,12 +20,10 @@
     NSArray *titleArray = [NSArray arrayWithObjects:@"日涨跌",@"一月",@"一年",@"今年",@"三年以来",@"成立以来",@"今年以来", nil];
     CustomSegmentControl *segmentCtrl = [[CustomSegmentControl alloc] initWithFrame:CGRectMake(20, 100, 300, 35) titles:titleArray subView:self.view];
     segmentCtrl.delegate = self;
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 -(void)selectedAtIndex:(NSInteger)index
 {

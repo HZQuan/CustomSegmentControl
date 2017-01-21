@@ -8,15 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "PopView.h"
+
 typedef enum {
     EnumArrowUpType,
     EnumArrowdownType,
 }ArrowState;
+
 @protocol SegmentSelectedAtIndexDelegate
 -(void) selectedAtIndex:(NSInteger) index;
 @end
+
 @interface CustomSegmentControl : UISegmentedControl
-@property (nonatomic ,assign) id<SegmentSelectedAtIndexDelegate> delegate;
+@property (nonatomic ,weak) id<SegmentSelectedAtIndexDelegate> delegate;
 @property (nonatomic ,strong) UIButton* otherSegmentItemButton;
 @property (nonatomic ,strong) PopView *popView;
 @property (nonatomic ,strong) UIImageView *imageViewArrow;
@@ -25,7 +28,5 @@ typedef enum {
 @property (nonatomic ,assign) NSInteger selectedTitltIndex;
 @property (nonatomic ,strong) UIView *theview;
 -(instancetype) initWithFrame:(CGRect)frame titles:(NSArray*)titles subView:(UIView*)view;
-
-
 
 @end

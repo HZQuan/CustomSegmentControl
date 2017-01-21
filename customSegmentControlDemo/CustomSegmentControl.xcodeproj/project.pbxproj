@@ -14,8 +14,8 @@
 		D7679DC41BDA076B00840DE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7679DC31BDA076B00840DE6 /* ViewController.m */; };
 		D7679DC71BDA076B00840DE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7679DC51BDA076B00840DE6 /* Main.storyboard */; };
 		D7679DC91BDA076B00840DE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7679DC81BDA076B00840DE6 /* Assets.xcassets */; };
-		D7679DD51BDA07D600840DE6 /* CustomSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D7679DD41BDA07D600840DE6 /* CustomSegmentControl.m */; };
 		D78F93261BDDB3840030C64C /* _0006_1_13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D78F93251BDDB3840030C64C /* _0006_1_13@2x.png */; };
+		E530CD161E33476600A8B0BF /* CustomSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E530CD151E33476600A8B0BF /* CustomSegmentControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		D7679DC61BDA076B00840DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7679DC81BDA076B00840DE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7679DCD1BDA076B00840DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7679DD31BDA07D600840DE6 /* CustomSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegmentControl.h; sourceTree = "<group>"; };
-		D7679DD41BDA07D600840DE6 /* CustomSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentControl.m; sourceTree = "<group>"; };
 		D78F93251BDDB3840030C64C /* _0006_1_13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "_0006_1_13@2x.png"; sourceTree = "<group>"; };
+		E530CD141E33476600A8B0BF /* CustomSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegmentControl.h; sourceTree = "<group>"; };
+		E530CD151E33476600A8B0BF /* CustomSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +66,7 @@
 		D7679DBB1BDA076B00840DE6 /* CustomSegmentControl */ = {
 			isa = PBXGroup;
 			children = (
+				E530CD131E33474400A8B0BF /* CustomSegment */,
 				D7679DBF1BDA076B00840DE6 /* AppDelegate.h */,
 				D7679DC01BDA076B00840DE6 /* AppDelegate.m */,
 				D7679DC21BDA076B00840DE6 /* ViewController.h */,
@@ -76,8 +77,6 @@
 				D753DD971BDA322A0010B011 /* PopView.h */,
 				D753DD981BDA322A0010B011 /* PopView.m */,
 				D7679DBC1BDA076B00840DE6 /* Supporting Files */,
-				D7679DD31BDA07D600840DE6 /* CustomSegmentControl.h */,
-				D7679DD41BDA07D600840DE6 /* CustomSegmentControl.m */,
 			);
 			path = CustomSegmentControl;
 			sourceTree = "<group>";
@@ -90,6 +89,15 @@
 				D7679DBD1BDA076B00840DE6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E530CD131E33474400A8B0BF /* CustomSegment */ = {
+			isa = PBXGroup;
+			children = (
+				E530CD141E33476600A8B0BF /* CustomSegmentControl.h */,
+				E530CD151E33476600A8B0BF /* CustomSegmentControl.m */,
+			);
+			path = CustomSegment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +131,7 @@
 				TargetAttributes = {
 					D7679DB81BDA076B00840DE6 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 3UFAY7EAJX;
 					};
 				};
 			};
@@ -163,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7679DD51BDA07D600840DE6 /* CustomSegmentControl.m in Sources */,
+				E530CD161E33476600A8B0BF /* CustomSegmentControl.m in Sources */,
 				D7679DC41BDA076B00840DE6 /* ViewController.m in Sources */,
 				D7679DC11BDA076B00840DE6 /* AppDelegate.m in Sources */,
 				D7679DBE1BDA076B00840DE6 /* main.m in Sources */,
@@ -269,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3UFAY7EAJX;
 				INFOPLIST_FILE = CustomSegmentControl/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -281,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3UFAY7EAJX;
 				INFOPLIST_FILE = CustomSegmentControl/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
