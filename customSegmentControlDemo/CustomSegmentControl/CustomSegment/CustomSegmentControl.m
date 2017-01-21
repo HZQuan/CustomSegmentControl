@@ -24,9 +24,9 @@
     [self addTarget:self action:@selector(segmentChange:) forControlEvents:UIControlEventValueChanged];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     self.otherSegmentItemButton = button;
-    int x = frame.origin.x+(frame.size.width)*3/4;
+    int x = frame.origin.x+(frame.size.width) * 3/4;
     int y = frame.origin.y;
-    int width = frame.size.width* 1/4;
+    int width = frame.size.width * 1/4;
     int height = frame.size.height ;
     button.frame = CGRectMake(x, y, width, height);
     [view addSubview:self];
@@ -43,7 +43,7 @@
     [view addSubview: _imageViewArrow];
     [self initArrowWithFrame:frame andView:view];
     self.arrowState = EnumArrowdownType;
-    int popviewheight = button.frame.origin.y+button.frame.size.height+2;
+    int popviewheight = button.frame.origin.y + button.frame.size.height+2;
     NSMutableArray *titleArray = [[NSMutableArray alloc] init];
     for (int i = 3; i < titles.count; i++) {
         [titleArray addObject:[titles objectAtIndex:i]];
